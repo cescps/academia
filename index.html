@@ -17,6 +17,12 @@
             text-align: center;
             padding: 1rem;
         }
+        header h1 {
+            font-size: 3.2rem; /* Augmenta la mida del títol */
+        }
+        header p {
+            font-size: 1.5rem; /* Canvia la mida del subtítol */
+        }
         nav {
             text-align: center;
             margin: 1rem 0;
@@ -31,6 +37,14 @@
             margin: auto;
             overflow: hidden;
             padding: 1rem;
+        }
+        .services, .contact, .photos {
+            margin-top: 2rem;
+        }
+        .photos img {
+            width: 100%;
+            height: auto;
+            margin: 1rem 0;
         }
         footer {
             background-color: #4CAF50;
@@ -56,12 +70,13 @@
 <body>
     <header>
         <h1>Acadèmia Millora</h1>
-        <p>Assolir l'excel·lència acadèmica</p>
+        <p>Assolir l'èxit acadèmic a través de l'esforç</p>
     </header>
 
     <nav>
         <a href="#qui-som">Qui som</a>
         <a href="#serveis">Serveis</a>
+        <a href="#fotos">Aules</a>
         <a href="#contacte">Contacte</a>
     </nav>
 
@@ -71,7 +86,7 @@
             <p>Som una acadèmia dedicada a proporcionar serveis d'educació de qualitat per ajudar els estudiants a assolir els seus objectius acadèmics. Oferim classes particulars, cursos de reforç i preparació d'exàmens.</p>
         </section>
 
-        <section id="serveis">
+        <section id="serveis" class="services">
             <h2>Serveis</h2>
             <ul>
                 <li>Classes particulars</li>
@@ -81,7 +96,13 @@
             </ul>
         </section>
 
-        <section id="contacte">
+        <section id="fotos" class="photos">
+            <h2>Aules</h2>
+            <img src="https://academiamillora.com/img/foto1.jpg" alt="Foto de l'Acadèmia Millora">
+            <img src="https://academiamillora.com/img/foto2.jpg" alt="Foto de l'Acadèmia Millora">
+        </section>
+
+        <section id="contacte" class="contact">
             <h2>Contacte</h2>
             <p>Per a més informació, no dubtis en posar-te en contacte amb nosaltres:</p>
             <p><strong>Telèfon:</strong> +34 123 456 789</p>
@@ -92,7 +113,8 @@
         </section>
 
         <div class="cta">
-            <p>Truca'ns ara al +34 123 456 789 per més informació!</p>
+            <p>Apunta't avui i transforma el teu futur acadèmic amb nosaltres!</p>
+            <a href="tel:+34123456789">Truca'ns al +34 123 456 789</a>
         </div>
     </div>
 
