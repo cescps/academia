@@ -1,20 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-  
+<html lang="ca">
 <head>
-  
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acadèmia Millora</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="img/round.png"/>
-  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 1rem;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .cta {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .cta a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Acadèmia Millora</h1>
+        <p>Assolir l'excel·lència acadèmica</p>
+    </header>
 
-    
-    
+    <nav>
+        <a href="#qui-som">Qui som</a>
+        <a href="#serveis">Serveis</a>
+        <a href="#contacte">Contacte</a>
+    </nav>
+
+    <div class="container">
+        <section id="qui-som">
+            <h2>Qui som</h2>
+            <p>Som una acadèmia dedicada a proporcionar serveis d'educació de qualitat per ajudar els estudiants a assolir els seus objectius acadèmics. Oferim classes particulars, cursos de reforç i preparació d'exàmens.</p>
+        </section>
+
+        <section id="serveis">
+            <h2>Serveis</h2>
+            <ul>
+                <li>Classes particulars</li>
+                <li>Cursos de reforç</li>
+                <li>Preparació d'exàmens</li>
+                <li>Orientació acadèmica</li>
+            </ul>
+        </section>
+
+        <section id="contacte">
+            <h2>Contacte</h2>
+            <p>Per a més informació, no dubtis en posar-te en contacte amb nosaltres:</p>
+            <p><strong>Telèfon:</strong> +34 123 456 789</p>
+            <p><strong>Email:</strong> info@academiamillora.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312.4123247210311!2d2.1540079742040996!3d41.39489740343862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f3d2b0f4b7%3A0x113a7c4e3578657a!2sPla%C3%A7a%20de%20Catalunya%2C%201%2C%2008002%20Barcelona%2C%20Espanya!5e0!3m2!1sca!2ses!4v1598539427610!5m2!1sca!2ses" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+
+        <div class="cta">
+            <p>Truca'ns ara al +34 123 456 789 per més informació!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Acadèmia Millora. Tots els drets reservats.</p>
+    </footer>
 </body>
 </html>
